@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.swiper-wrapper {
+    margin-top: myrem(88);
+    padding-bottom: 4px;
+    // transition-timing-function: linear;
+}
+
+.p-slide {
+    height: auto;
+    width: myrem(264);
+    background-color: $white;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.p-slide a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.p-slide__img {
+    width: myrem(264);
+}
+
+.p-slide__img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: 264/166;
+}
+
+.p-slide__title {
+    padding: myrem(16) myrem(16);
+}
+
+.p-slide__title p {
+    display: inline-block;
+    color: $text-color;
+    font-weight: 700;
+    font-size: myrem(16);
+    line-height: 1.5;
+}
+
+.p-slide__price {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: myrem(16);
+    margin-left: myrem(18);
+}
+.p-slide__price p {
+    color: $text-color;
+    font-size: myrem(16);
+    line-height: 1.43;
+}

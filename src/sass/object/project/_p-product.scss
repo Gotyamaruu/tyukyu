@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-product {
+    background-color: $bg-color;
+    padding-bottom: myrem(90);
+    padding-top: myrem(40);
+    @include mq('md') {
+      padding-top: 0;
+    }
+}
