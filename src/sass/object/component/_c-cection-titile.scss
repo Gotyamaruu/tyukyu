@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-section-title {
+    text-align: center;
+}
+.c-section-title p {
+    color: $text-color;
+    font-weight: 700;
+    font-size: myrem(32);
+    line-height: 1.43;
+}
