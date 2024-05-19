@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.p-accordion__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-accordion__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: myrem(315);
+    padding-top: 10px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    color: $text-color;
+    font-weight: bold;
+    font-size: myrem(18);
+    text-align: left;
+    @include mq("md") {
+        display: block;
+        width: myrem(740);
+        padding-bottom: 3px;
+        padding-left: 14px;
+        padding-left: 0;
+    }
+}
+
+.p-accordion__btn span {
+    margin-right: 8px;
+    color: $text-color;
+    font-size: myrem(24);
+    font-family: $font-en;
+}
+
+.p-accordion__btn::after {
+    position: absolute;
+    top: 50%;
+    right: myrem(10);
+    transform: translateY(-50%) rotate(135deg);
+    width: myrem(7);
+    height: myrem(7);
+    border-top: 2px solid $grey;
+    border-right: 2px solid $grey;
+    content: "";
+    transition: .3s;
+    @include mq(md) {
+        right: myrem(19);
+        width: myrem(10);
+        height: myrem(10);
+    }
+}
+
+.p-accordion__btn.open::after {
+    top: 63%;
+    transform: translateY(-50%) rotate(315deg);
+}
+
+.p-accordion__btn:nth-child(n+2) {
+    margin-top: myrem(31);
+}
+
+.p-accordion__content {
+    display: none;
+    justify-content: center;
+    width: myrem(315);
+    margin-top: myrem(29);
+    padding-left: 15px;
+    line-height: 1.5;
+    @include mq("md") {
+        width: myrem(740);
+    }
+}

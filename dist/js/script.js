@@ -46,3 +46,11 @@ const swiper = new Swiper('.swiper-container', {
       disableOnInteraction: false
   },
 });
+
+$(function () {
+  $('.js-accordion-btn').on('click', function () {
+    var content = $(this).next('.js-accordion-content');
+    content.slideToggle(200);
+    $(this).toggleClass('open');
+  })
+})

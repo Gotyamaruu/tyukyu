@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-faq {
+    padding-top: myrem(91);
+    padding-bottom: myrem(91);
+    background-color: $bg-color;
+}
+
+.p-faq .c-section-title {
+    margin-bottom: myrem(73);
+}
