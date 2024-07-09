@@ -9,7 +9,7 @@
   margin: myrem(50) myrem(30);
   @include mq('md') {
     max-width: myrem(934);
-    margin: myrem(90) auto;
+    margin: myrem(88) auto myrem(90) auto;
   }
 }
 
@@ -18,13 +18,15 @@
   padding-bottom: myrem(15);
   border-top: 1px solid #C6C6C6;
   @include mq('md') {
-    padding-top: myrem(22);
-    padding-bottom: myrem(20);
+    padding-top: myrem(20);
+    padding-bottom: myrem(21);
   }
 }
 
 .p-news-contents__list:last-child {
   border-bottom: 1px solid #C6C6C6;
+  padding-top: myrem(23);
+  padding-bottom: myrem(22);
 }
 
 .p-news-contents__date {
@@ -40,7 +42,7 @@
   margin-top: 10px;
   margin-left: 0;
   @include mq('md') {
-    margin-left: myrem(120);
+    margin-left: myrem(116);
     margin-top: 0;
   }
 }
